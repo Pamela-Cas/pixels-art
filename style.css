@@ -1,26 +1,32 @@
-#title {
-    font-style: italic;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20pt;
-    color: crimson;
-    background-color: dodgerblue;
-}
-#color-palette{
+#art{
     display: table;
     border-spacing: 1px;
     background-color: black;
-    border: 5px solid black;
+    border: 1px solid black;
 }
 
-.fileira
-{
+.row {
     display: table-row;
 }
 
-.color
-{
+.pixel {
     display: table-cell;
     background-color: white;
     width: 40px;
     height: 40px;
+}
+
+.color {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+#color-palette{
+    display: table;
+    border-spacing: 1px;
+    border: 1px solid black;
+    margin-right: 25px;
+    marker-end: 1px;
 }
