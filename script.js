@@ -18,9 +18,9 @@ const colorList = [
     let element = document.createElement('div');
     element.className = 'color';
     element.id = 'black';
-    element.style.backgroundColor = 'black';
+    element.style.backgroundColor = 'rgb(0, 0, 0)';
     palette.appendChild(element);
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i +=1) {
         const value = Math.floor(Math.random()* colorList.length);
         const color = colorList[value];
         
@@ -44,7 +44,7 @@ for (const element of colorElements) {
   });
 }
 document.getElementById('black').className = 'color selected';
-let penColour = 'black';
+let penColour = 'rgb(0, 0, 0)';
 
 function setPenColour(pen) {
   penColour = pen;
@@ -56,7 +56,7 @@ function setPixelColour(pixel) {
 const pixelElements = document.getElementsByClassName('pixel');
 document.getElementById('clear-board').addEventListener('click', function () {
   for (const element of pixelElements) {
-    element.style.backgroundColor = 'white';
+    element.style.backgroundColor = 'rgb(255, 255, 255)';
   }
 });
 
